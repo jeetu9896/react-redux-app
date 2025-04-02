@@ -1,5 +1,27 @@
 import React from "react";
 
+const styles = {
+  table: {
+    width: "100%",
+    borderCollapse: "collapse",
+    marginTop: "20px",
+  },
+  th: {
+    backgroundColor: "#007BFF",
+    color: "#fff",
+    padding: "10px",
+    textAlign: "left",
+    borderBottom: "2px solid #ddd",
+  },
+  td: {
+    padding: "10px",
+    borderBottom: "1px solid #ddd",
+  },
+  tr: {
+    cursor: "pointer",
+  },
+};
+
 const Table = ({ columns, data, onRowClick }) => {
   return (
     <table style={styles.table}>
@@ -21,28 +43,6 @@ const Table = ({ columns, data, onRowClick }) => {
       </tbody>
     </table>
   );
-};
-
-const styles = {
-  table: {
-    width: "100%",
-    borderCollapse: "collapse",
-    marginTop: "20px",
-  },
-  th: {
-    backgroundColor: "#007BFF",
-    color: "#fff",
-    padding: "10px",
-    textAlign: "left",
-    borderBottom: "2px solid #ddd",
-  },
-  td: {
-    padding: "10px",
-    borderBottom: "1px solid #ddd",
-  },
-  tr: {
-    cursor: "pointer",
-  },
 };
 
 export default Table;
